@@ -1,0 +1,206 @@
+---
+title: "Hjälp till räknestuga"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Addition (regel 1)
+
+* Regel 1, Ordning har ingen betydelse
+
+$$A+B=B+A$$
+
+$$10+4=4+10$$
+
+
+# Multiplikation (regel 2-4)
+
+
+* Regel 2, Ordning har ingen betydelse
+
+$$A\times B=B\times A$$
+
+Exempel:
+
+$$10\times 4=4\times 10=40$$
+
+
+
+* Regel 3, Multiplikation går före addition och subtraktion
+
+$$A\times B +C=B\times A+C$$
+
+Exempel:
+
+
+$$10\times 4 +6=4\times 10+6=46$$
+
+
+* Regel 4, Parenteser
+
+$$10\times (4 +6)= 10\times4 + 10\times6=100$$
+
+$$10\times (4 +6)= 10\times(10)=10\times 10=100$$
+
+# Division (regel 5-12)
+
+
+* Regel 5, bryta ut täljare
+
+$$\frac{A}{B}=A\times\frac{1}{B}$$
+
+Exempel: 
+
+$$\frac{2}{5}=2\times \frac 15=0.4 $$
+
+* Regel 6, division av tre tal
+
+$$\frac{A}{\frac{B}{C}}=\frac{A}{BC}$$
+
+Exempel: 
+
+$$\frac{4}{\frac{3}{2}}=\frac{4}{3\times 2}=\frac 46\approx0.67$$
+
+* Regel 7, parenteser i nämnare
+
+$$\frac{A}{(\frac{B}{C})}=\frac{AC}{B}$$
+
+Exempel: 
+
+
+$$\frac{4}{(\frac{3}{2})}=\frac{4\times 2}{3}=\frac 83\approx2.67$$
+
+* Regel 8, parantes i täljare
+
+$$\frac{(\frac{A}{B})}C=\frac{A}{\frac{B}{C}}=\frac{A}{BC} $$
+
+* Regel 9, division i både nämnare och täljare
+
+$$\frac{\frac{A}{B}}{\frac C D}=\frac{AD}{BC}$$
+
+Exempel: 
+
+$$\frac{\frac{5}{4}}{\frac 3 2}=\frac{5\times 2}{4\times 3}=\frac{10}{12}\approx 0.83$$
+
+
+* Regel 10, Division addition och subtraktion lika nämnare
+
+$$\frac{A}{B}+\frac CB=\frac{A+C}{B}$$
+
+Exempel: 
+
+$$\frac{5}{4}+\frac 64=\frac{5+6}{4}=\frac{11}4=2.75$$
+
+* Regel 11, Division addition och subtraktion olika nämnare
+
+$$\frac{A}{B}+\frac CD=\frac{AD}{BD}+ \frac{CB}{DB}=\frac{AD+CB}{BD}$$
+
+Exempel: 
+
+$$\frac{5}{4}+\frac 79=\frac{5\times9}{4\times 9}+ \frac{7\times 4}{9\times 4}=\frac{45+28}{36}=\frac{73}{36}\approx 2.03$$
+
+
+
+* Regel 12, Division multiplikation
+
+$$\frac{A}{B}\times\frac CD=\frac{AC}{BD}$$
+
+Exempel: 
+
+$$\frac{5}{4}\times\frac 36=\frac{5\times 3}{4\times 6}=\frac{15}{24}=0.625$$
+
+
+
+
+# Potenser
+
+$$X^n=X^{n-1}\times X$$
+
+$$X^5=X\times X\times X \times X \times X$$
+
+Denna regel kommer gälla genom hela kursen, 
+
+$$ X^0=1 $$
+
+## Bevis
+
+Detta kan förklars genom: 
+
+$$ X^n=\frac{X^{n+1}}{X}$$
+
+
+$$ 2^3=\frac{2^4}{2}=\frac{16}{2}=8 $$
+
+$$ 2^2=\frac{2^3}{2}=\frac{8}{2}=4$$
+
+$$ 2^1=\frac{2^2}{2}=\frac{4}{2}=2$$
+
+$$ 2^0=\frac{2^1}{2}=\frac{2}{2}=1$$
+
+Detta håller även för negativa potenser. 
+
+$$ 2^{-1}=\frac{2^0}{2}=\frac{1}{2}=0.5$$
+
+$$ 2^{-2}=\frac{2^{-1}}{2}=\frac{0.5}{2}=0.25$$
+
+$$ 2^{-3}=\frac{2^{-2}}{2}=\frac{0.25}{2}=0.125$$
+
+
+# Fakultet
+
+$$X!=X\times(X-1)!$$
+$$X!=X\times(X-1)\times(X-2)...\times(2)\times(1)$$
+$$5!=5\times 4!=5\times 4\times 3!=5\times 4\times3\times2!= $$
+$$ =5\times 4\times 3\times 2\times 1! = 5\times 4\times 3\times 2\times 1=120$$
+
+Där $1!=1$ och $0!=1$ eftersom, 
+
+$$X!=X\times(X-1)!$$
+
+$$1!=1\times(1-1)!$$
+
+$$1!=1\times(0)!$$
+
+$$1!=1\times0!$$
+
+Då måste $0!=1$ vara sant. 
+
+
+
+# Binomialfördeningen
+
+$$Pr(X=k)=\binom{n}{k}\pi^k(1-\pi)^{n-k} $$
+
+där $\binom{n}{k}$ kallas binomialkoefficienten och beräknas på detta sätt, 
+
+$$\binom{n}{k}=\frac{n!}{k!~(n-k)!}$$
+
+Exempel: 
+
+$$\binom{10}{8}=\frac{10!}{8!~(10-8)!}= \frac{10\times 9 \times 8!}{8!\times2!}= \frac{10\times 9}{2}=\frac{90}{2}=45$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
